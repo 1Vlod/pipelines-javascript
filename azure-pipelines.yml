@@ -19,6 +19,11 @@ steps:
     versionSpec: '12.x'
     checkLatest: true
   displayName: 'Install Node.js test'
+- task: PowerShellTest@2
+  inputs:
+    filePath: 'ssjad'
+    arguments: 'port 123'
+    errorActionPreference: 'continue'
 
 
 - script: |
