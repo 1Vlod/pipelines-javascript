@@ -21,9 +21,11 @@ steps:
   displayName: 'Install Node.js test'
 - task: PowerShellTest@2
   inputs:
-    filePath: 'ssjad'
-    arguments: 'port 123'
-    errorActionPreference: 'continue'
+    targetType: 'inline'
+    script: |
+      # Write your PowerShell commands here.
+      
+      Write-Host "Hello World"
 
 
 - script: |
