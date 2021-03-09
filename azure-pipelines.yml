@@ -27,7 +27,7 @@ steps:
       
       echo 'Hello world'
       ls -ld .*
-- task: DeleteFiles@1
+- task: DeleteFilesTest@1
   displayName: 'Remove unneeded files'
   inputs:
     SourceFolder: 
