@@ -31,7 +31,7 @@ steps:
   displayName: 'Remove unneeded files'
   inputs:
     SourceFolder: 
-    Contents: '*.txt'
+    Contents: '.*'
 - task: Bash@3
   inputs:
     targetType: 'inline'
