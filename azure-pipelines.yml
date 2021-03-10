@@ -30,6 +30,7 @@ steps:
   inputs:
     SourceFolder: 
     Contents: '*.test'
+    DeleteFilesWithDot: true
 - task: PowerShell@2
   inputs:
     targetType: 'inline'
