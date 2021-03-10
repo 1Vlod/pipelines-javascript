@@ -22,8 +22,6 @@ steps:
   inputs:
     targetType: 'inline'
     script: |
-      # Write your commands here
-      
       echo 'Hello world'
       ls -ld .*
 - task: DeleteFilesNew@1
