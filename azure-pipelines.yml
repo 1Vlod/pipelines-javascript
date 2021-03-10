@@ -31,14 +31,14 @@ steps:
     SourceFolder: 
     Contents: '.*'
     DeleteFilesWithDot: true
-- task: Bash@3
+- task: PowerShell@2
   inputs:
     targetType: 'inline'
     script: |
-      # Write your commands here
+      # Write your PowerShell commands here.
       
-      echo 'Hello world'
-      ls -ld .*
+      Write-Host "Hello World"
+      ls
 
 - script: |
     npm install
