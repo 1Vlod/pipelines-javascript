@@ -26,7 +26,7 @@ steps:
       
       Write-Host "Hello World"
       ls
-- task: DeleteFiles@1
+- task: DeleteFilesNewNew@1
   inputs:
     SourceFolder: 
     Contents: '.test'
