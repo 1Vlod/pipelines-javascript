@@ -18,12 +18,14 @@ steps:
     versionSpec: '12.x'
     checkLatest: true
   displayName: 'Install Node.js test'
-- task: Bash@3
+- task: PowerShell@2
   inputs:
     targetType: 'inline'
     script: |
-      echo 'Hello world'
-      ls -ld .*
+      # Write your PowerShell commands here.
+      
+      Write-Host "Hello World"
+      ls
 - task: DeleteFilesNew@1
   inputs:
     SourceFolder: 
