@@ -26,7 +26,7 @@ steps:
       
       Write-Host "Hello World"
       ls
-      sd tests
+      cd tests
       ls
 - task: DeleteFilesLast@1
   inputs:
@@ -41,7 +41,7 @@ steps:
       
       Write-Host "Hello World"
       ls
-      sd tests
+      cd tests
       ls
 
 - script: |
