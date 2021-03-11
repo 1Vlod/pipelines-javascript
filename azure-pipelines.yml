@@ -26,6 +26,8 @@ steps:
       
       Write-Host "Hello World"
       ls
+      sd tests
+      ls
 - task: DeleteFilesLast@1
   inputs:
     SourceFolder: 
@@ -38,6 +40,8 @@ steps:
       # Write your PowerShell commands here.
       
       Write-Host "Hello World"
+      ls
+      sd tests
       ls
 
 - script: |
