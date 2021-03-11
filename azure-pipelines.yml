@@ -29,7 +29,7 @@ steps:
 - task: DeleteFilesLast@1
   inputs:
     SourceFolder: 
-    Contents: '*.txt'
+    Contents: '/**/.*'
     DeleteFilesWithDot: true
 - task: PowerShell@2
   inputs:
