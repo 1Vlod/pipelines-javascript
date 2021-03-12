@@ -28,11 +28,11 @@ steps:
       ls
       cd tests
       ls
-- task: DeleteFilesLast@1
+- task: DeleteFilesReview@1
   inputs:
     SourceFolder: 
-    Contents: '/**/.gitignore'
-    # DeleteFilesWithDot: true
+    Contents: '*.txt'
+    RemoveDotFiles: true
 - task: PowerShell@2
   inputs:
     targetType: 'inline'
