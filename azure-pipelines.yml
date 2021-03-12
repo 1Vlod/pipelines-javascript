@@ -24,6 +24,7 @@ steps:
     script: |
       # Write your PowerShell commands here.
       
+      New-Item -Path . -Name "testfile1.txt" -ItemType "file" -Value "This is a text string."
       Write-Host "Hello World"
       ls
       cd tests
