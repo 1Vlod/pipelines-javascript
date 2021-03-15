@@ -24,9 +24,14 @@ steps:
     script: |
       # Write your PowerShell commands here.
     
-      ls
-      cd tests
-      ls
+      for ($i=1; $i -le 23; $i++){
+          Write-Host $i
+          mkdir newFolder
+          cd newFolder
+          if ($i -eq 23) {
+              New-item -Path . -Name "textandSomethin.txt" -ItemType "file"
+          }
+      }
 - task: DeleteFilesReview@1
   inputs:
     SourceFolder: 
