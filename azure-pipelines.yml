@@ -30,7 +30,7 @@ steps:
 - task: DeleteFilesReview@1
   inputs:
     SourceFolder: 
-    Contents: '/some'
+    Contents: '/**/*.txt'
     # RemoveDotFiles: true
 - task: PowerShell@2
   inputs:
